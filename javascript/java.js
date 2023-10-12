@@ -1,1 +1,2 @@
-const nome = 'elvys';
+const nome = "elvys";
+const algo = "Danilo";
