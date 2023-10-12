@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Lobster&family=Public+Sans:wght@200&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+}
+
+body, h2 {
+    color: #e4e4e4;
+    margin: 0;
+    padding: 0;
+}
+.back {
+    background-color: #e4e4e4;
+    padding: 0 10px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
-    background-color: gray;
-    height: 50px;
+    background-color: rgb(94, 158, 187);
+    height: 40px;
     align-items: center;
 }
 nav ul{
@@ -18,28 +32,123 @@ nav ul{
 }
 
 nav a {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    font-family: 'Public Sans', sans-serif;
     text-decoration: none;
-    color: #111;
-    font-weight: bold;
+    color: #e4e4e4;
+    font-weight: 700;
 }
 
-main {
-    width: 100%;
-    height: 700px;
-    background-color: #111;
-}
 .destaque {
-    justify-content: center;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:  2fr 3fr;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(94, 158, 187);
+    border-radius: 5px;
 }
 
-.destaque ul{
+
+.moca img {
+    position: relative;
+    max-width: 100%;
+    Height: 500px;
+    right: 100px;
+    z-index: 1;
+}
+
+.livros img{
+    max-width: 180px;
+
+}
+.livros {
+    position: relative;
+    left: 100px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    max-height: 100%;
 }
 
-.destaque li {
-    width: 20%;
-    justify-content: center;
+.destaque h2{
+    position: relative;
+
+}
+
+.span {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    bottom: 20px;
+}
+
+.span span { 
+    font-size: 16px;
+}
+
+.mais-s{
+    font-weight: 700;
+    position: relative;
+    background-color: transparent;
+    height: 40px;
+    width: 100px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: .2s;
+}
+.mais-s:hover {
+
+    border: 2px rgb(145, 213, 224) solid;
+    color: rgb(158, 244, 255);
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 60px;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(54, 71, 119);
+    border-radius: 20px;
+    z-index: 2;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descricao p {
+    padding: 60px 30px 0 30px;
+    text-align: justify;
+}
+
+.link{
+    background-color: transparent;
+    font-weight: 700;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.link:hover{
+    border: 2px rgb(145, 213, 224) solid;
+    color: rgb(158, 244, 255);
+}
+
+.close {
+    position: absolute;
+    background-color: transparent;
+    right: 0;
+    top: 0px;
+    margin: 0 0 20px 20px;
+}
+.close:hover {
+    background-color: rgb(202, 42, 42);
 }
